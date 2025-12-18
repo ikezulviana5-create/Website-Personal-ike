@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Portofolio Ike Zulfiana</title>
+  <style>
+    :root{
+      --primary:#a7165e;
+      --secondary:#2563eb;
+      --accent:#f5970b;
+      --bg:#f8fafc;
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{
+      font-family:'Segoe UI',sans-serif;
+      background:var(--bg);
+      color:#97367f;
+      line-height:1.7;
+      scroll-behavior:smooth;
+    }
+    header{
+      position:fixed;
+      top:0;left:0;width:100%;
+      background:rgba(138, 30, 89, 0.95);
+      z-index:1000;
+      box-shadow:0 4px 10px rgba(0,0,0,.1)
+    }
+    .navbar{
+      max-width:1200px;margin:auto;
+      display:flex;justify-content:space-between;align-items:center;
+      padding:15px 30px
+    }
+    .logo{color:#fff;font-size:22px;font-weight:700}
+    .nav-menu{list-style:none;display:flex;gap:20px}
+    .nav-menu a{
+      color:#fff;text-decoration:none;font-weight:500;
+      padding:6px 14px;border-radius:20px;transition:.3s
+    }
+    .nav-menu a:hover{background:var(--accent);color:#000}
+
+    section{padding:120px 20px}
+    .container{max-width:1100px;margin:auto}
+
+    
+    #home{
+      min-height:100vh;
+      display:flex;align-items:center;
+      background:linear-gradient(135deg,var(--secondary),var(--primary));
+      color:#fff;text-align:center
+    }
+    #home h1{font-size:46px;margin-bottom:15px}
+    #home span{color:var(--accent)}
+    #home p{max-width:700px;margin:0 auto 30px;font-size:18px}
+    .cta{
+      display:inline-block;
+      background:var(--accent);color:#000;
+      padding:14px 35px;border-radius:30px;
+      font-weight:700;text-decoration:none;
+      box-shadow:0 10px 25px rgba(0,0,0,.25)
+    }
+
+    /* SECTION TITLE */
+    h2{text-align:center;font-size:34px;margin-bottom:40px;color:var(--primary)}
+
+    /* ABOUT */
+    #about p{text-align:center;max-width:850px;margin:auto;font-size:18px}
+
+    /* CARDS */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px
+    }
+    .card{
+      background:#fff;
+      padding:35px;
+      border-radius:18px;
+      box-shadow:0 15px 30px rgba(0,0,0,.08);
+      transition:.4s
+    }
+    .card:hover{transform:translateY(-10px)}
+    .card h3{margin-bottom:10px;color:var(--secondary)}
+
+    /* SKILLS */
+    .skill span{display:block;font-weight:600;margin-bottom:6px}
+    .bar{
+      background:#e5e7eb;border-radius:20px;overflow:hidden
+    }
+    .bar div{
+      height:10px;background:var(--secondary)
+    }
+
+    /* PORTFOLIO */
+    .tag{display:inline-block;background:var(--accent);padding:4px 10px;border-radius:12px;font-size:12px;margin-top:10px}
+
+    /* CONTACT */
+    form{max-width:500px;margin:auto}
+    input,textarea{
+      width:100%;padding:14px;margin-bottom:15px;
+      border-radius:10px;border:1px solid #d1d5db
+    }
+    button{
+      width:100%;padding:14px;border:none;
+      background:var(--primary);color:#fff;
+      border-radius:30px;font-size:16px;font-weight:600
+    }
+
+    footer{
+      background:#020617;color:#cbd5f5;
+      text-align:center;padding:30px
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">MyPersonal</div>
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home">
+  <div class="container">
+    <h1><span>Website Portofolio</span><br>Ike Zulfiana</h1>
+    <p>Website ini merupakan portofolio digital Ike Zulfiana yang dirancang secara mandiri untuk tugas Ujian Akhir Semester.</p>
+    <a href="#portfolio" class="cta">Jelajahi</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container">
+    <h2>Tentang Saya</h2>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;gap:40px;justify-content:center">
+      <img src="Gambar WhatsApp 2025-12-17 pukul 21.34.53_ba2b2fc8.jpg" alt="Foto Profil" style="width:220px;height:220px;object-fit:cover;border-radius:50%;box-shadow:0 20px 40px rgba(0,0,0,.2);border:6px solid #f59e0b">
+      <div style="max-width:600px;font-size:18px">
+        <p>Halo semuanya Saya Ike Zulfiana gadis dengan keturunan suku Jawa yang lahir di Kab. Dharmasraya pada 11 july 2004, tepatnya 21 tahun yang lalu saya lahir kedunia ini, Saya adalah anak perempuan pertama dari 2 bersaudara. Saya sangat menyukai senja dan laut karna itu membuat saya merasa tenang.</p>
+        <p style="margin-top:15px">Melalui website ini, saya ingin memperkenalkan diri saya mulai dari hobi dan juga lainnya. saya sangat menyukai laut dan juga senja, Selain menyukai senja dan laut I have a hobby of playing badminton, traveling and I am a student at UIN IB PADANG.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="container">
+    <h2>Keahlian</h2>
+    <div class="grid">
+      <div class="card skill">
+        <span>Memasak</span>
+        <div class="bar"><div style="width:90%"></div></div>
+      </div>
+      <div class="card skill">
+        <span>Badminton</span>
+        <div class="bar"><div style="width:85%"></div></div>
+      </div>
+      <div class="card skill">
+        <span>Mengedit Video Di Capcut</span>
+        <div class="bar"><div style="width:70%"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="container">
+    <h2>Portofolio</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Tentang Saya</h3>
+        <p>Saya Mahasiswa semester 7 ilmu perpustakaan dan informasi islam UIN Imam Bonjol Padang</p>
+        
+      </div>
+      <div class="card">
+        <h3>Alamat</h3>
+        <p>Saya beralamat Di Kabupaten Dharmasraya, tetapi saat ini saya tinggal di kota padang, tepatnya di Koto Tengah, Anak Air Lubuk Buaya</p>
+    
+      </div>
+      <div class="card">
+        <h3>Kontak Pribadi</h3>
+        <p>Nama:Ike Zulfiana</p> <p>Email: ikezulviana5@gmail.com</p><p> WhatsApp: 083186588193</p>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Hubungi Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama">
+      <input type="email" placeholder="Email">
+      <textarea rows="4" placeholder="Tulis Pesan Untuk Saya"></textarea>
+      <button>Kirim Pesan</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 • Website Personal Portofolio | Ike Zulfiana</p>
+</footer>
+
+</body>
+</html>
